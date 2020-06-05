@@ -30,4 +30,4 @@ jobs:
         echo "SECRET_KEY = \'\${{ secrets.DJANGO_SECRET }}\'" >> PlantSitter/PlantSitter/secrets.py
     - name: Run Tests
       run: |
-      python PlantSitter/manage.py test
+        python PlantSitter/manage.py test
