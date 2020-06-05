@@ -27,7 +27,7 @@ jobs:
         pip install -r PlantSitter/requirements.txt
     - name: Setup Secret
       run: |
-        echo "SECRET_KEY = \'${{ secrets.DJANGO_SECRET }}\'" >> PlantSitter/PlantSitter/secrets.py
+        "echo "SECRET_KEY = \'${{ secrets.DJANGO_SECRET }}\'" >> PlantSitter/PlantSitter/secrets.py"
     - name: Run Tests
       run: |
       python PlantSitter/manage.py test
