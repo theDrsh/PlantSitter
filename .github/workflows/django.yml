@@ -25,7 +25,6 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r PlantSitter/requirements.txt
-    - name: Setup Secrets
     - name: Run Tests
       run: |
         python PlantSitter/manage.py test
